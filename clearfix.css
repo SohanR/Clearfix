@@ -1,0 +1,16 @@
+.clearfix::after{
+    /*
+    content:"";
+    clear:both;
+    display:table;
+    */
+
+
+    /*This code snippet is a famous hack that many devolopers use to clear any floating object after box*/
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    /*Hide the content tha we placed above "." */
+    visibility: hidden;
+}
